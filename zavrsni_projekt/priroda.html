@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Priroda </title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: white;
+    }
+
+    .sekcija {
+      background-color: white;
+      margin: 2em auto;
+      padding: 2em;
+      max-width: 60em;
+      border-radius: 0.8em;
+      box-shadow: 0 0.4em 0.8em rgba(0, 0, 0, 0.1);
+    }
+
+    .sekcija-flex {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+    }
+
+    @media (min-width: 50em) {
+      .sekcija-flex {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+
+    article {
+      flex: 1;
+    }
+
+    figure {
+      flex: 1;
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      max-width: 25em;
+      border-radius: 0.6em;
+      box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, 0.2);
+    }
+
+    figcaption {
+      margin-top: 0.5em;
+      font-style: italic;
+      font-size: 0.9em;
+    }
+
+    h2 {
+      color: green;
+    }
+
+    footer nav a {
+      margin: 0 0.5em;
+      text-decoration: none;
+      color: white;
+      background-color: red;
+      padding: 0.4em 1em;
+      border-radius: 0.4em;
+    }
+
+    footer nav a:hover {
+      background-color: red;
+    }
+
+    footer {
+      background-color: red;
+      color: white;
+      text-align: center;
+      padding: 1.5em 0;
+      margin-top: 3em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Priroda </h1>
+  </header>
+
+  <main>
+    <section class="sekcija sekcija-flex">
+      <article>
+        <h2>Planine i vulkani</h2>
+        <p>Japan je dom više od 70% planinskog terena, ukljucujuci slavni vulkan Fuji-san. Planine igraju vaznu ulogu u kulturi i religiji te nude stotine pjesackih staza i hramova skrivenih medu sumama.</p>
+        <p>Vulkan Fuji, s visinom od 3776 metara, simbol je Japana i popularno mjesto za penjanje i duhovnu obnovu.</p>
+      </article>
+      <figure>
+        <img src="slike/fuji.jpg" >
+      </figure>
+    </section>
+
+    <section class="sekcija sekcija-flex">
+      <figure>
+        <img src="slike/tresnja.jpg" >
+      </figure>
+      <article>
+        <h2>Sakura – cvjetanje trešnje</h2>
+        <p>Svakog proljeca cijeli Japan prekriva ruzicasto-bijeli pokrivac cvjetova tresnje. Hanami, običaj promatranja sakure, okuplja obitelji i prijatelje u parkovima pod stablima tresnje.</p>
+        <p>Sakura simbolizira prolaznost zivota i ljepotu trenutka, što ima duboko značenje u japanskoj filozofiji i umjetnosti.</p>
+      </article>
+    </section>
+
+    <section class="sekcija">
+      <article>
+        <h2>Obale, rijeke i sume</h2>
+        <p>Japan je okruzen oceanom i ima tisuce kilometara razvedene obale s prelijepim plazama i bogatim morskim zivotom. Rijeke poput Shinano i Tone protjecu kroz ravnice i planinske doline, pružajuci vodu i energiju.</p>
+        <p>Unutrasnjost Japana prekrivaju guste sume – od bambusovih do planinskih cetinarskih. Mnoge regije, poput Nare i Nikka, nude ocuvanu prirodu i divlje zivotinje.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="index.html">index</a>
+      <a href="kultura.html">Kultura</a>
+      <a href="priroda.html">Priroda</a>
+      <a href="multimedija.html">Multimedija</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <p>© 2025 Japan Web</p>
+  </footer>
+</body>
+</html>

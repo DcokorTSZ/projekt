@@ -1,0 +1,173 @@
+/* Resetiranje osnovnih stilova */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Osnovne postavke za tijelo dokumenta */
+html, body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Gornji naslov (header) */
+header {
+  background-color: #d32f2f; 
+  color: white;
+  padding: 2em;
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 0.05em;
+  box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
+}
+
+/* Navigacija */
+nav {
+  background-color: #f5f5f5;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+nav a {
+  color: #b71c1c;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  transition: background-color 0.3s;
+  background-color: #ffe0e0;
+}
+
+nav a:hover {
+  background-color: #f8c8c8;
+}
+
+/* Glavni sadržaj stranice */
+main {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Sekcije i članci unutar stranice */
+section, article {
+  background-color: #ffffff;
+  padding: 1.5em;
+  border-radius: 0.5em;
+  box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+/* Slike u sadržaju */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5em;
+}
+
+/* Stilovi za multimediju */
+audio, video {
+  margin-top: 1em;
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+/* Footer */
+footer {
+  background-color: #d32f2f;
+  text-align: center;
+  padding: 1em;
+  color: white;
+  margin-top: 2em;
+}
+
+/* Forma (na kontakt stranici) */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+input, select, textarea, button {
+  padding: 0.8em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 0.4em;
+}
+
+button {
+  background-color: #b71c1c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #880e4f;
+}
+
+/* Responsivni raspored za slike i tekst */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  align-items: flex-start;
+}
+
+.flex-container > * {
+  flex: 1 1 45%;
+}
+
+/* Prilagodba za manju rezoluciju (iPad i manje) */
+@media (max-width: 1024px) {
+  html, body {
+    font-size: 0.95em;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  main {
+    padding: 1em;
+  }
+
+  footer {
+    font-size: 0.9em;
+    padding: 0.8em;
+  }
+
+  nav a {
+    padding: 0.5em;
+    font-size: 0.95em;
+  }
+}
+
+/* Prilagodba za vrlo veliki ekran (1920x1200 i više) */
+@media (min-width: 1600px) {
+  body {
+    font-size: 1.1em;
+  }
+
+  main {
+    max-width: 1400px;
+  }
+
+  nav a {
+    font-size: 1.05em;
+    padding: 0.6em 1.2em;
+  }
+}

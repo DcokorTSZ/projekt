@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Japan </title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: red;
+      color: white;
+      text-align: center;
+      padding: 2em 0;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    main {
+      flex: 1;
+      padding: 2em;
+      max-width: 60em;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 3em;
+    }
+
+    h2 {
+      color: red;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    footer {
+      background-color: red;
+      color: white;
+      text-align: center;
+      padding: 1.5em 0;
+    }
+
+    footer nav a {
+      margin: 0 0.5em;
+      text-decoration: none;
+      color: whitesmoke;
+      background-color: red;
+      padding: 0.4em 1em;
+      border-radius: 0.4em;
+    }
+
+    footer nav a:hover {
+      background-color: red;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    figcaption {
+      font-style: italic;
+      font-size: 0.9em;
+      margin-top: 0.5em;
+    }
+
+    @media (min-width: 50em) {
+      .flex-sekcija {
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .flex-sekcija > * {
+        flex: 1 1 45%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dobrodosli u Japan</h1>
+  </header>
+
+  <main>
+    <section class="flex-sekcija">
+      <figure>
+        <img src="slike/japan.jpg" >
+        
+      </figure>
+
+      <article>
+        <h2>O Japanu</h2>
+        <p>Japan je otočna nacija poznata po svojoj bogatoj povijesti, kulturi i modernoj tehnologiji. Glavni grad Tokio jedan je od najnaseljenijih gradova na svijetu.</p>
+        <p>Osim urbane arhitekture, zemlja nudi i nevjerojatne prirodne ljepote kao sto su planina Fuji, vruci izvori (onsen), te prekrasna obalna podrucja. Sakura, tradicionalni festival cvjetanja tresnje, privlaci milijune posjetitelja svake godine.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Japanska kultura i svakodnevica</h2>
+      <p>Japanci pridaju veliku vaznost postovanju, harmoniji i redu. Ove vrijednosti duboko su ukorijenjene u svakodnevnom zivotu, od pozdrava i poslovnog ponasanja, do uređenja doma i odnosa prema prirodi.</p>
+      <p>U skolama se osim akademskog znanja poučava i moralni odgoj. Djeca ciste ucionice i skole kao dio rutine, cime se potice odgovornost i timski duh.</p>
+      <p>Tehnologija i tradicija sesto idu ruku pod ruku – moguce je pronaci najmodernije vlakove uz hramove stare tisucama godina. Japanski vrtovi, cajne ceremonije, bonsai stabla i ikebana (umjetnost aranziranja cvijeca) odrazavaju duboku povezanost s prirodom i estetikom.</p>
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="index.html">index</a>
+      <a href="kultura.html">Kultura</a>
+      <a href="priroda.html">Priroda</a>
+      <a href="multimedija.html">Multimedija</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <p>© 2025 Japan Web</p>
+  </footer>
+</body>
+</html>

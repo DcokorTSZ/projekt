@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakt</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: white;
+      font-family: 'Poppins', sans-serif; 
+    }
+
+    header {
+      background-color: red;
+      color: white;
+      text-align: center;
+      padding: 2em 0;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    form {
+      max-width: 50em;
+      margin: 2em auto;
+      background-color: white;
+      padding: 2em;
+      border-radius: 1em;
+      box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, 0.1);
+    }
+
+    fieldset {
+      border: none;
+      padding: 0;
+    }
+
+    label {
+      display: block;
+      margin-top: 1.2em;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 0.8em;
+      margin-top: 0.4em;
+      border: 1px solid white;
+      border-radius: 0.4em;
+      font-size: 1em;
+    }
+
+    button {
+      margin-top: 2em;
+      padding: 0.8em 2em;
+      font-size: 1em;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 0.4em;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: red;
+    }
+
+    footer {
+      background-color: red;
+      color: white;
+      text-align: center;
+      padding: 1.5em 0;
+      margin-top: 3em;
+    }
+
+    footer nav a {
+      margin: 0 0.5em;
+      text-decoration: none;
+      color: white;
+      background-color: red;
+      padding: 0.4em 1em;
+      border-radius: 0.4em;
+    }
+
+    footer nav a:hover {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kontaktirajte nas</h1>
+  </header>
+
+  <main>
+    <form action="mailto:tvoj-email@example.com" method="post" enctype="text/plain">
+      <fieldset>
+        <legend><strong>Kontakt forma</strong></legend>
+
+        <label for="ime">Ime i prezime:</label>
+        <input type="text" id="ime" name="ime" required />
+
+        <label for="email">E-mail adresa:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="tema">Odaberite temu:</label>
+        <select id="tema" name="tema">
+          <option value="turizam">Turizam</option>
+          <option value="kultura">Kultura</option>
+          <option value="priroda">Priroda</option>
+          <option value="multimedija">Multimedija</option>
+        </select>
+
+        <label for="poruka">Vasa poruka:</label>
+        <textarea id="poruka" name="poruka" rows="5" placeholder="Upišite poruku..."></textarea>
+
+        <button type="submit">Posalji poruku</button>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="index.html">index</a>
+      <a href="kultura.html">Kultura</a>
+      <a href="priroda.html">Priroda</a>
+      <a href="multimedija.html">Multimedija</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <p>© 2025 Japan Web</p>
+  </footer>
+</body>
+</html>

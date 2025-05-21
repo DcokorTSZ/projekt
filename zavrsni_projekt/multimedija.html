@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Multimedija o Japanu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Roboto', sans-serif;
+      background-color: white;
+      color: black;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: red;
+      color: white;
+      text-align: center;
+      padding: 2em 0;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin: 0;
+    }
+
+    main {
+      flex: 1;
+      max-width: 60em;
+      margin: 0 auto;
+      padding: 2em 1em;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+    }
+
+    section {
+      background-color: white;
+      padding: 2em;
+      border-radius: 1em;
+      box-shadow: 0 0.4em 0.8em rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: red;
+      margin-top: 0;
+    }
+
+    audio, video {
+      width: 100%;
+      margin-top: 1em;
+      border: 1px solid white;
+      border-radius: 0.5em;
+    }
+
+    footer {
+      background-color: red;
+      color: white;
+      text-align: center;
+      padding: 1.5em 1em;
+    }
+
+    footer nav {
+      margin-bottom: 0.5em;
+    }
+
+    footer nav a {
+      margin: 0 0.5em;
+      text-decoration: none;
+      color: white;
+      background-color: red;
+      padding: 0.4em 1em;
+      border-radius: 0.4em;
+      transition: background-color 0.3s;
+    }
+
+    footer nav a:hover {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Multimedija o Japanu</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Tradicionalna japanska glazba</h2>
+      <p>Poslusajte tradicionalne zvukove Japana – koristenje instrumenata kao što je koto.</p>
+      <audio controls>
+        <source src="audio/koto.mp3" type="audio/mpeg" />
+       
+      </audio>
+
+      <h2 style="margin-top: 2em;">Video: Kultura i krajolici Japana</h2>
+      <p>Uzivajte u prekrasnim scenama japanske prirode i kulture kroz ovaj kratki video zapis.</p>
+      <video controls>
+        <source src="video/video.mp4" type="video/mp4" />
+   
+      </video>
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="index.html">index</a>
+      <a href="kultura.html">Kultura</a>
+      <a href="priroda.html">Priroda</a>
+      <a href="multimedija.html">Multimedija</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <p>© 2025 Japan Web</p>
+  </footer>
+</body>
+</html>
